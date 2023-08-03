@@ -53,17 +53,17 @@ def main_loop(mapa, initial_pos, final_pos):
     while (px, py) != final_pos:
         display_map(mapa)
 
-        key = readkey()
-        if key == key.UP:
+        k = readkey()
+        if k == k.UP:
             n_px = px - 1
             n_py = py
-        elif key == key.UP:
+        elif k == k.LEFT:
             n_px = px
             n_py = py - 1
-        elif key == key.LEFT:
+        elif k == k.DOWM:
             n_px = px + 1
             n_py = py
-        elif key == key.RIGHT:
+        elif k == k.RIGHT:
             n_px = px
             n_py = py + 1
         else:
