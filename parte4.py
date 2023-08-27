@@ -23,8 +23,15 @@ lab = """..###################
 #...#.....#.....#...#
 ###################.#"""
 
-[0][0]
-[19][20]
+#[0][0]
+#[19][20]
+
+for y in range(len(lab)):
+    for x in range(len(lab[y])):
+        if lab[y][x] == 1:
+            posicion_inicial = (x, y)
+        if lab[y][x] == 2:
+            posicion_final = (x, y)
 
 def mostrar(mapa):
     # join en cadenas

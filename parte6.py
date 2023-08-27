@@ -6,7 +6,7 @@ def string_to_matrix(maze_string):
 
 from functools import reduce
 
-def leer_mapa(map1.txt):
+def leer_mapa (map1.txt):
     with open(map1.txt, 'r') as archivo:
         lineas = archivo.readlines()
     
@@ -21,7 +21,7 @@ def leer_mapa(map1.txt):
     return mapa, coordenadas
 
 nombre_archivo = 'map1.txt'
-mapa, coordenadas = leer_mapa(map1.txt)
+mapa, coordenadas = leer_mapa("map1.txt")
 print("map1.txt:")
 print(mapa)
 print("Coordenadas de 'X':")
